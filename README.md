@@ -146,3 +146,4 @@ Ran all test suites.
 
 - Derived from [Next.js example with typescript eslint jest](https://github.com/vercel/next.js/tree/canary/examples/with-typescript-eslint-jest)
 - [Test Utilities @ reactjs.org](https://reactjs.org/docs/test-utils.html)
+- [React testing library does not require act()](https://testing-library.com/docs/preact-testing-library/api/#act)
