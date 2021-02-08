@@ -1,4 +1,4 @@
-import { screen, render, fireEvent, act } from '@testing-library/react'
+import { screen, render, fireEvent } from '@testing-library/react'
 import { Counter } from '../../pages/counter'
 
 describe('Counter', () => {
@@ -10,9 +10,7 @@ describe('Counter', () => {
   it('Pressing `+` button increments the counter.', () => {
     render(<Counter />)
     expect(screen.getByText('0', { selector: 'p' }))
-    act(() => {
-      fireEvent.click(screen.getByText('+', { selector: 'button' }))
-    })
+    fireEvent.click(screen.getByText('+', { selector: 'button' }))
     expect(screen.getByText('1', { selector: 'p' }))
   })
 })
